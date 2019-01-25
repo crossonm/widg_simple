@@ -1,0 +1,40 @@
+<!-- In this version, the js has been separated from the HTM file
+and the js functions have been attached to the buttons -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>This is the simplified ordering page</title>
+
+     <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="./stylesheet.css">
+
+     <!-- Javascript functions used by the page -->
+     <script src="./the_script_part.js"></script>
+
+</head>
+
+
+<body>
+    <!-- Lays out the ordering buttons -->
+    Small Gadget <br>
+    <button type="button"  class="btn btn-navbar"onclick="addGadget('small_plain_gadget')">plain</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('small_painted_gadget')">painted</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('small_plated_gadget')">plated</button>
+    <hr>
+    Medium Gadget<br>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('medium_plain_gadget')">plain</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('medium_painted_gadget')">painted</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('medium_plated_gadget')">plated</button>
+    <hr>
+    Large Gadget<br>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('large_plain_gadget')">plain</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('large_painted_gadget')">painted</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('large_plated_gadget')">plated</button>
+    <hr>
+    <button type="button" class="btn bg-success" onclick="sumOrder()">Submit Order</button>
+    <div class="total"></div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!-- This version is ugly and basic, but more-or-less working 
+      * Adding Reset Order button  
+      * Making item descriptions friendlier and adding prices 
+      * Adding finalize order and total functions            -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="MS Crosson">
+
+    <title>This is the simplified ordering page</title>
+
+     <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="./stylesheet.css">
+
+     <!-- Javascript functions used by the page -->
+     <script src="./the_script_part4.js"></script>
+</head>
+
+
+<body>
+    <h1>WAG, Inc. Ordering Page</h1><hr>
+    <!-- Lays out the ordering buttons -->
+    <h3>Order Small Gadgets</h3><br>
+    <button type="button"  class="btn btn-navbar"onclick="addGadget('(1) Small Plain Gadget @   $5.00')">plain</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Painted Gadget @   $6.00')">painted</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plated Gadget @   $7.00')">plated</button>
+    <hr>
+    <h3>Order Medium Gadgets</h3><br>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Plain Gadget @   $8.00')">plain</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Painted Gadget @   $9.00')">painted</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Plated Gadget @   $10.00')">plated</button>
+    <hr>
+    <h3>Order Large Gadgets</h3><br>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Large Plain Gadget @   $11.00')">plain</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Large Painted Gadget @   $12.00')">painted</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Large Plated Gadget @   $13.00')">plated</button>
+    <hr>
+
+    <!-- Submit Order button calls function that displays entire order in the area below-->
+    <button type="button" class="btn bg-success" onclick="sumOrder()">Show Current Order</button>
+
+     <!-- Clear Order button calls function that resets the array-->
+     <button type="button" class="btn bg-success" onclick="resetOrder()">Clear Current Order</button>
+
+      <!-- Finalize Order button calls function that summarizes order and displays total-->
+      <button type="button" class="btn bg-success" onclick="finalOrder(purchaseOrder)">Finalize Order</button>
+    
+    <!-- ID of area in which to display the completed order -->
+    <br><hr><br>
+    <h3>Display the current order below:</h3>
+    <div id="orderDisplay">
+    </div>
+    <br><hr><br>
+    <h3>Display the final order below:</h3>
+    <div id="finalOrderDisplay">
+    </div>
+    
+
+    <!-- Print contents of div orderDisplay-->
+    <br><hr>
+    <h3>Print the finalized order for your records</h3>
+    <input type="button" class="btn bg-success" onclick="printDiv('finalOrderDisplay')" value="Print Finalized Order" />
+    
+</body>
+</html>

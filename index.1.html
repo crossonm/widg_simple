@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>This is the simplified ordering page</title>
+
+    <script type="text/javascript">
+        var purchaseOrder = []; // declare the array that holds the order
+
+        /* function that adds purchases to the purchase order */
+        function addGadget(pick) {
+        purchaseOrder.push(pick);
+        /* document.querySelector(".txt").innerHTML = purchaseOrder.join(''); */
+
+        //temp spit to console for troubleshooting
+        arrayLength = purchaseOrder.length;
+        for (i=0; i < arrayLength; i++){
+            console.log(purchaseOrder[i])
+        }
+        }
+    </script>
+
+</head>
+<body>
+    Small Gadget <br>
+   <button type="button" onclick="console.log(12)">plain</button>
+    <button type="button" onclick="addGadget(9)">painted</button>
+    <button>plated</button>
+    <hr>
+    Medium Gadget<br>
+    <button value="medium plain widget">plain</button>
+    <button value="medium painted widget">painted</button>
+    <button value="medium plated widget">plated</button>
+    <hr>
+    Large Gadget<br>
+    <button value="large plain widget">plain</button>
+    <button value="large painted widget">painted</button>
+    <button value="large plated widget">plated</button>
+    <div class="total"></div>
+</body>
+</html>
