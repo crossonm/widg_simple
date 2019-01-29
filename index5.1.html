@@ -1,5 +1,4 @@
-<!-- This version will include tables with the ultimate
-goal of showing live cart contents as buttons are pushed     -->
+<!-- This version will include some formating and graphics     -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +14,7 @@ goal of showing live cart contents as buttons are pushed     -->
      <link rel="stylesheet" href="./stylesheet.css">
 
      <!-- Javascript functions used by the page -->
-     <script src="./the_script_part5.js"></script>
+     <script src="./the_script_part4.js"></script>
 </head>
 
 
@@ -27,39 +26,22 @@ goal of showing live cart contents as buttons are pushed     -->
       <h4>Quick-Order Page</h4>
     </center></div>
     <hr style.color = "magenta";>
-      
-
-    <!-- Here comes the table -->
-    <table style="width:90%">
-        <tr>
-            <th><h3>First, choose your gadgets...</h3></th>
-            <th><h3>Your current order:</h3></th>
-        </tr>
-        <tr>
-          <td>
-            <!-- Lays out the ordering buttons (section 1) -->
-            <h4>Order Small Gadgets</h4>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plain Gadget @   $5.00'); showOrder()">plain</button>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Painted Gadget @   $6.00'); showOrder()">painted</button>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plated Gadget @   $7.00'); showOrder()">plated</button>
-            
-            <h4>Order Medium Gadgets</h4>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Plain Gadget @   $8.00'); showOrder()">plain</button>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Painted Gadget @   $9.00'); showOrder()">painted</button>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Plated Gadget @   $10.00'); showOrder()">plated</button>
-            
-            <h4>Order Large Gadgets</h4>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Large Plain Gadget @   $11.00'); showOrder()">plain</button>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Large Painted Gadget @   $12.00'); showOrder()">painted</button>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Large Plated Gadget @   $13.00'); showOrder()">plated</button>
-        </td>
-
-          <td id="writeHere">No items currently in cart.</td> 
-        </tr>
-        
-      </table>
-
+    <!-- Lays out the ordering buttons (section 1) -->
+    <h3>First, choose your gadgets...</h3><br>
+    <h4>Order Small Gadgets</h4>
+    <button type="button"  class="btn btn-navbar"onclick="addGadget('(1) Small Plain Gadget @   $5.00')">plain</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Painted Gadget @   $6.00')">painted</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plated Gadget @   $7.00')">plated</button>
     
+    <h4>Order Medium Gadgets</h4>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Plain Gadget @   $8.00')">plain</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Painted Gadget @   $9.00')">painted</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Plated Gadget @   $10.00')">plated</button>
+    
+    <h4>Order Large Gadgets</h4>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Large Plain Gadget @   $11.00')">plain</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Large Painted Gadget @   $12.00')">painted</button>
+    <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Large Plated Gadget @   $13.00')">plated</button>
     <hr>
 
     <!-- Preview order (section 2) -->
@@ -91,5 +73,3 @@ goal of showing live cart contents as buttons are pushed     -->
     <!-- Print contents of div orderDisplay-->
     <input type="button" class="btn btn-navbar" onclick="printDiv('finalOrderDisplay')" value="Print Finalized Order" />
     <button class="btn btn-navbar" onclick="window.location.href='https://marycrosson.wufoo.com/forms/zgdnr3815vcy52/'">Submit Payment Info</button>
-    
-    
