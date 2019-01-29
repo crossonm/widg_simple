@@ -1,5 +1,6 @@
-<!-- This version will include tables with the ultimate
-goal of showing live cart contents as buttons are pushed     -->
+<!-- In this version, the live display of current order
+is working. I've added functionality to delete items from
+the order and to clear the entire order and start over.    -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,24 +63,29 @@ goal of showing live cart contents as buttons are pushed     -->
     
     <hr>
 
-    <!-- Preview order (section 2) -->
-    <h3>Next, review your order.</h3>
+    <!-- Remove functions area (section 2) -->
+   
 
     <!-- Submit Order button calls function that displays entire order in the area below-->
-    <button type="button" class="btn btn-navbar" onclick="sumOrder()">Review Current Order</button>
+    <button type="button" class="btn bg-primary" onclick="clearLast()">Delete Last Item</button>
 
     <!-- Clear Order button calls function that resets the array-->
-     <button type="button" class="btn btn-navbar" onclick="resetOrder()">Clear Current Order</button>
+     <button type="button" class="btn bg-primary" onclick="resetOrder()">Clear Current Order</button>
 
-    <!-- ID of area in which to display the completed order -->
-    <br><br>
-    <h4>Your current order:</h4>
-    <div id="orderDisplay">
-    </div>
+   
     <br><hr>
 
     <!-- Finalize order (section 3) -->
-    <h3> Once everything looks good, click 'Finalize' to complete your order.</h3>
+    <h3> Once everything looks good, click 'Finalize' to complete your order. </h3>
+    <br>
+    <h5>You may submit credit card information and pay online or print your invoice and send payment by mail to: <br>
+      <br>      
+      <b>WAG Industries<br>
+        1840 Paseo<br>
+        Kansas City, MO 64119-1234<br>
+      </b>
+      </h5>
+
     <!-- Finalize Order button calls function that summarizes order and displays total-->
     <button type="button" class="btn btn-navbar" onclick="finalOrder(purchaseOrder)">Finalize Order</button>
     <br><br>
@@ -90,6 +96,6 @@ goal of showing live cart contents as buttons are pushed     -->
     
     <!-- Print contents of div orderDisplay-->
     <input type="button" class="btn btn-navbar" onclick="printDiv('finalOrderDisplay')" value="Print Finalized Order" />
-    <button class="btn btn-navbar" onclick="window.location.href='https://marycrosson.wufoo.com/forms/zgdnr3815vcy52/'">Submit Payment Info</button>
+    <button class="btn btn-navbar" onclick="window.location.href='https://marycrosson.wufoo.com/forms/zgdnr3815vcy52/'">Pay Online</button>
     
     
