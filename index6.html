@@ -39,10 +39,24 @@ the order and to clear the entire order and start over.    -->
         <tr>
           <td>
             <!-- Lays out the ordering buttons (section 1) -->
-            <h4>Order Small Gadgets</h4>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plain Gadget @   $5.00'); showOrder()">plain</button>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Painted Gadget @   $6.00'); showOrder()">painted</button>
-            <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plated Gadget @   $7.00'); showOrder()">plated</button>
+            <div class="container">
+              <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Order Small Gadgets</h4>
+                  </div>
+                  <div class="card-body"></div>
+                  <li data-tags="Small Gadgets"><a class="fancybox" rel="group" href="img/1.jpg"><img width="100%" height="100%" src="img/1.jpg"></a></li>
+                  <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plain Gadget @   $5.00'); showOrder()">plain</button>
+                  <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Painted Gadget @   $6.00'); showOrder()">painted</button>
+                  <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plated Gadget @   $7.00'); showOrder()">plated</button>
+              
+                 
+
+                  
+                </div>
+                </div>
+   
             
             <h4>Order Medium Gadgets</h4>
             <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Medium Plain Gadget @   $8.00'); showOrder()">plain</button>
