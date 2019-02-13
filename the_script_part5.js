@@ -1,7 +1,5 @@
 //This version outputs to the HTML page
-/* v3 additions: reset order function
-                 final order function (not working if outputs to finalOrderDisplay element; 
-                 not sure why yet...)                 */
+/* v5 additions: to include display of current order as made   */
 
 //the var part
 var purchaseOrder=[];
@@ -24,10 +22,10 @@ function sumOrder(){
 }
 
 
-//the resetting-the-order function part
+//the resetting-the-order function part 
 function resetOrder(){
     purchaseOrder=[]
-    document.getElementById("orderDisplay").innerHTML = ("Order cleared...New order follows:" + "<br>");
+    document.getElementById("writeHere").innerHTML = ("Order cleared. Your shopping cart is now empty." + "<br>");
 }
 
 //the printing-the-order part, taken from stackoverflow.com
@@ -125,8 +123,20 @@ function finalOrder(purchaseOrder){
    
     }
     
-    
-    
+ 
+    function showOrder(){
+        numPurchases = purchaseOrder.length
+        document.getElementById("writeHere").innerHTML = ""; //clear existing text
+        for (i=0; i < numPurchases; i++){ //write current order
+        document.getElementById("writeHere").innerHTML += (purchaseOrder[i] +"<br>");
+    }
+    }
+
+    function clearLast() {
+        purchaseOrder.pop(); //delete last item in purchase
+        showOrder(); //rewrite the new order
+    }
+  
 
 // Stuff I'm not using 
 
