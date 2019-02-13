@@ -1,6 +1,10 @@
-<!-- In this version, the live display of current order
+<!-- NOT READY FOR PRIME TIME
+  
+  In this version, the live display of current order
 is working. I've added functionality to delete items from
-the order and to clear the entire order and start over.    -->
+the order and to clear the entire order and start over. Also,
+adding table in left half of order screen to hold buttons and
+small thumbnail pictures of the gadgets.    -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,9 +41,25 @@ the order and to clear the entire order and start over.    -->
             <th><h3>Your current order:</h3></th>
         </tr>
         <tr>
-          <td valign="top">
+          <td>
             <!-- Lays out the ordering buttons (section 1) -->
             <h4>Order Small Gadgets</h4>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
             <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plain Gadget @   $5.00'); showOrder()">plain</button>
             <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Painted Gadget @   $6.00'); showOrder()">painted</button>
             <button type="button"  class="btn btn-navbar" onclick="addGadget('(1) Small Plated Gadget @   $7.00'); showOrder()">plated</button>
