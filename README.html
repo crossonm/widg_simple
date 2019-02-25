@@ -5,8 +5,9 @@ An HTML version of this file, containing screenshots, can be found at http://mar
 Introduction
 ------------
 
-This widg_simple repository contains my first project for the 2018/2019 'Developing Web Applications with JavaScript' course. It's a simple, one-page shopping cart application that allows the user to select 
-items, add them to an online shopping cart, remove items/clear the entire order, and finalize the  order/receive a mock invoice.
+This widg_simple repository contains my first project for the 2018/2019 'Developing Web Applications with JavaScript'
+course. It's a simple, one-page shopping cart application that allows the user to select items, add them to an online 
+shopping cart, remove items/clear the entire order, and finalize the  order/receive a mock invoice.
 
 A functioning version of the application can be accessed at http://marycrosson.com/jsclass/widget-cart/index9.html
 
@@ -14,32 +15,33 @@ A functioning version of the application can be accessed at http://marycrosson.c
 Features
 --------
 
-The user starts with an empty order. Items are added to the order by clicking the corresponding
- item buttons.
+The user starts with an empty order. Items are added to the order by clicking the corresponding item buttons.
 
 Items can be deleted from the order individually or the entire order can be cleared at one fell swoop.
 
-The order is finalized and a simple invoice summarizing the order and giving a total is generated. The user can go back and continue editing the order at this point; re-finalizing 
-the order generates an updated invoice.
+The order is finalized and a simple invoice summarizing the order and giving a total is generated. The user can
+go back and continue editing the order at this point; re-finalizing the order generates an updated invoice.
 
-At the end of the process, the user has the option to print and mail the invoice with payment (it's 1998 at WAG Industries) or submit credit card information on a dummy 
-form.
+At the end of the process, the user has the option to print and mail the invoice with payment (it's 1998 at WAG 
+Industries) or submit credit card information on a dummy form.
 
 
 What I learned from the project
 -------------------------------
 
-In retrospect, and with several weeks more of the course under my belt, there are a number of things I would do differently now, among them:
+In retrospect, and with several weeks more of the course under my belt, there are a number of things I would do 
+differently now, among them:
   
 
-* I used tables for part of the layout, which I now understand is 
-not a best practice. It would have been better to use CSS everywhere.
+* I used tables for part of the layout, which I now understand is not a best practice. It would be better to use 
+CSS everywhere.
 
-* I used arrays to hold the order information. This means that the order is stored in the browser and cleared when the page is reloaded. This is okay for a demo, but for a "real 
-life" application, you would store order information in a database like Mongo, where 
-it is non-transiently accessible to both purchaser and seller.
+* I used arrays to hold the order information. This means that the order is stored in the browser and cleared when 
+the page is reloaded. This is okay for a demo, but for a "real life" application, you would store order information
+in a database like Mongo, where it is non-transiently accessible to both purchaser and seller.
 
-* I would use a cookie to connect the user with their order so that a potential purchaser with a non-commited order would be returned to their current shopping cart.
+* I would use a cookie to connect the user with their order so that a potential purchaser with a non-commited order 
+would be returned to their current shopping cart.
  
 * I would never in a real-world situation use an unencrypted web form to transmit
  financial data
