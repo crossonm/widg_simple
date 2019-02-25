@@ -39,7 +39,7 @@ function printDiv(divName) {
 
 //the finalizing-the-order function part
 function finalOrder(purchaseOrder){
-    // initialize the shit out of the counters
+    // initialize the counters
     numSmaPlain = 0
     numSmaPaint = 0
     numSmaPlate = 0
@@ -73,6 +73,7 @@ function finalOrder(purchaseOrder){
     }
     //summarize the order 
     var totalCost = 0.00
+    document.getElementById("finalOrderDisplay").innerHTML = ""; //clear existing text
     if (numSmaPlain !== 0){
         console.log(numSmaPlain + " Small Plain Gadget(s): $" +numSmaPlain*5)
         document.getElementById("finalOrderDisplay").innerHTML += (numSmaPlain + " Small Plain Gadget(s): $" +numSmaPlain*5 +"<br>");
@@ -111,15 +112,15 @@ function finalOrder(purchaseOrder){
     if (numLarPaint !== 0){
         console.log(numLarPaint + " Large Painted Widget(s): $" +numLarPaint*12)
         document.getElementById("finalOrderDisplay").innerHTML += (numLarPaint + " Large Painted Widget(s): $" +numLarPaint*12 +"<br>");
-        totalCost = totalCost + (numMedPaint*12)
+        totalCost = totalCost + (numLarPaint*12)
     }
     if (numLarPlate !== 0){
         console.log(numLarPlate + " Large Plated Widget(s): $" +numLarPlate*13)
         document.getElementById("finalOrderDisplay").innerHTML += (numLarPlate + " Large Plated Widget(s): $" +numLarPlate*13 +"<br>");
-        totalCost = totalCost + (numMedPlate*13)
+        totalCost = totalCost + (numLarPlate*13)
     }
-    console.log("Your total cost is $ " + totalCost)
-    document.getElementById("finalOrderDisplay").innerHTML += ("Your total cost is $ " + totalCost +"<br>");
+    
+    document.getElementById("finalOrderDisplay").innerHTML += ("<b>------------------------</br>"+ "Your total cost is $ " + totalCost +"</b><br>");
    
     }
     
@@ -149,12 +150,3 @@ for (i=0; i<numPurchases; i++) {
 } */
 
 
-
-/*some trash data for testing
-addGadget(7)
-addGadget("small_plain_gadget")
-addGadget(14)
-addGadget("something")
-
-//write out the order
-sumOrder() */
