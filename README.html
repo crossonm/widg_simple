@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Mary Crosson">
+    <title>ReadMe file for JSClass Shopping Cart Project</title>
+
+     <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="./stylesheet.css">
+
+</head>
+<body>
+    <div> 
+        <h2>README for widg_simple repository</h2>
+        <br>
+        <h4>Introduction</h4>
+        <p>
+        This widg_simple repository contains my first project for the 2018/2019 'Developing Web Applications 
+        with JavaScript' course. It's a simple, one-page shopping cart application that allows the user to select 
+        items, add them to an online shopping cart, remove items/clear the entire order, and finalize the 
+        order/receive a mock invoice.</p>
+
+        <br>
+        <h4>Features</h4>
+        <p>The user starts with an empty order. Items are added to the order by clicking the corresponding
+            item button.<br><br>
+            <img src="./img/order.png" width=50% alt="screenshot of the ordering part of the web app">
+        </p>
+        <p>Items can be deleted from the order individually or the entire order can be cleared at one 
+            fell swoop.<br><br>
+            <img src="./img/edit.png" width=50% alt="screenshot of the edit part of the web app">
+        </p>
+        <p>The order is finalized and a simple invoice summarizing the order and giving a total is 
+            generated. The user can go back and continue editing the order at this point; re-finalizing 
+            the order generated an updated invoice.<br><br>
+            <img src="./img/finalize.png" width=50% alt="screenshot of the edit part of the web app">
+        </p>
+        <p>At the end of the process, the user has the option to print and mail the invoice with 
+            payment (it's 1998 at WAG Industries) or submit credit card information on a dummy 
+            form.<br><br>
+            <img src="./img/end.png" width=50% alt="screenshot of the edit part of the web app">
+        </p>
+
+        <br>
+        <h4>What I learned from the project</h4>
+    
+
+        <p>
+        In retrospect, and with several weeks more of the course under my belt, there are a number of 
+        things I would do differently now, among them:
+        </p>
+        <p><ul>
+        <li>I used tables for part of the layout, which I now understand is 
+        not a best practice. It would have been better to use CSS everywhere.
+       </li>
+        <li>I used arrays to hold the order information. This means that the order is stored in the 
+            browser and cleared when the page is reloaded. This is okay for a demo, but for a "real 
+            life" application, you would store order information in a database like Mongo, where 
+            it is non-transiently accessible to both purchaser and seller.
+        </li>
+        <li>I would use a cookie to connect the user with their order so that a potential purchaser 
+            with a non-commited order would be returned to their current shopping cart.
+        </li>
+        <li>I would never in a real-world situation use an unencrypted web form to transmit
+            financial data
+        </li>
+       </p>
+       <br><br>
+    <p>----------------------------<br>
+          Mary Crosson<br>
+          maryrcrosson@gmail.com<br>
+          25 FEB 2019</p>
+    </div>
+
+    
+</body>
+</html>
